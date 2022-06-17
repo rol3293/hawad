@@ -2,7 +2,7 @@ import 'animate.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Header from '../components/Header'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 export default function Home() {
 

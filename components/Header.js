@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Head from "next/head"
-import Link from 'next/Link'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
