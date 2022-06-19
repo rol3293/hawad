@@ -7,7 +7,7 @@ const projectList = [
     {
         link: 'https://github.com/me50/rol3293/tree/web50/projects/2020/x/capstone',
         title: 'Capstone',
-        desc: 'Real time messaging web application for my final project for HarvardX CS50&apos;s Web Programming with Python and JavaScript. Uses Django, websockets, redist, and docker',
+        desc: 'Real time messaging web application for my final project for HarvardX CS50\'s Web Programming with Python and JavaScript. Uses Django, websockets, redist, and docker',
         icon: faMessage
     },
     {
@@ -53,8 +53,11 @@ export default function Projects() {
         <div>
             <Header title="Projects" />
             <main style={{ padding: '15px' }} >
-                <div className='title'>Projects</div>
-                <div className='subtitle'>List of my completed personal projects and projects that I&apos;m currently working on.</div>
+                <div className='subtitle animate__animated animate__fadeIn animate__fast'>
+                    <div className='title'>Projects</div>
+                    <div className='subtitle'>List of my completed personal projects and projects that I&apos;m currently working on.</div>
+                </div>
+
                 <br />
                 {
                     projectList.map(item => {
