@@ -32,10 +32,13 @@ export default function Education() {
             <Header />
 
             <main>
-                <div className='title'>Education</div>
-                <div className='subtitle'>List of all my learnings and certificates</div>
+                <div className='subtitle animate__animated animate__fadeIn animate__fast'>
+                    <div className='title'>Education</div>
+                    <div>List of all my learnings and certificates</div>
+                </div>
+                
                 <br />
-                <h2 className={'animate__animated animate__fadeInUp'}>2021</h2>
+                <h2 className={'animate__animated animate__fadeInUp animate__fast'}>2021</h2>
                 <ul className={'animate__animated animate__fadeInUp'}>
                     {
                         educationList2021.map(item => {
@@ -52,7 +55,7 @@ export default function Education() {
                         })
                     }
                 </ul>
-                <h2 className={'animate__animated animate__fadeInUp'}>2020</h2>
+                <h2 className={'animate__animated animate__fadeInUp animate__fast'}>2020</h2>
                 <ul className={'animate__animated animate__fadeInUp'}>
                     {
                         educationList2020.map(item => {

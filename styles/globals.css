@@ -104,3 +104,15 @@ nav {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+div#socials {
+  opacity: 0;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+li > * {
+  vertical-align: text-top;
+}
