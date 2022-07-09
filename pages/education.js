@@ -29,7 +29,7 @@ const educationList2020 = [
 export default function Education() {
     return (
         <div>
-            <Header />
+            <Header title="Education" />
 
             <main>
                 <div className='subtitle animate__animated animate__fadeIn animate__fast'>
