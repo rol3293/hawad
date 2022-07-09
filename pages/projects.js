@@ -1,9 +1,15 @@
 import 'animate.css';
 import Header from '../components/Header';
 import Card from '../components/Card'
-import { faMessage, faEye, faGamepad, faRobot, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faMessage, faEye, faGamepad, faRobot, faCartShopping, faServer } from "@fortawesome/free-solid-svg-icons";
 
 const projectList = [
+    {
+        link: 'https://github.com/rol3293/hawad',
+        title: 'Portfolio',
+        desc: 'The website you are currently in. Uses Next.js',
+        icon: faServer
+    },
     {
         link: 'https://github.com/me50/rol3293/tree/web50/projects/2020/x/capstone',
         title: 'Capstone',
