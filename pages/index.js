@@ -33,7 +33,7 @@ export default function Home() {
 					</div>
 				</Link>
 
-				<div style={{ marginTop: '40px' }} id='socials'>
+				<div style={{ marginTop: '40px' }} className='animationUp1'>
 					<a className='nav-item' href='https://github.com/rol3293' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faGithub} size={'lg'} /></a>
 					<a className='nav-item' href='https://www.linkedin.com/in/hawad-ahmad-6979121b5/' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} size={'lg'} /></a>
 					<a className='nav-item' href='https://twitter.com/Thorpost1' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faTwitter} size={'lg'} /></a>
