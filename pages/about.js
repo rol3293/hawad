@@ -23,12 +23,12 @@ export default function About() {
                     <div className='subtitle'>{description}</div>
                 </div>
                 <br /><br />
-                <h2>Personal Info</h2>
+                <h2 className='animate__animated animate__fadeInUp animate'>Personal Info</h2>
                 <ul>
-                    <li>Age: {calculateAge()}</li>
-                    <li>Favorite Colour: <bold style={{ color: 'green' }}>Green</bold></li>
-                    <li>Sports that I play: Soccer and Basketball</li>
-                    <li>Favorite Fruit: Blueberries</li>
+                    <li className='animationUp1'>Age: {calculateAge()}</li>
+                    <li className='animationUp2'>Favorite Colour: <bold style={{ color: 'green' }}>Green</bold></li>
+                    <li className='animationUp3'>Sports that I play: Soccer and Basketball</li>
+                    <li className='animationUp4'>Favorite Fruit: Blueberries</li>
                 </ul>
             </main>
         </div>
