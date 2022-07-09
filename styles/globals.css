@@ -105,13 +105,35 @@ nav {
   transform-origin: bottom left;
 }
 
-div#socials {
+.animationUp1 {
   opacity: 0;
   animation: fadeInUp;
   animation-duration: 1s;
-  animation-delay: .5s;
+  animation-delay: .1s;
   animation-fill-mode: forwards;
 }
+.animationUp2 {
+  opacity: 0;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+.animationUp3 {
+  opacity: 0;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+.animationUp4 {
+  opacity: 0;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+}
+
 
 li > * {
   vertical-align: text-top;
