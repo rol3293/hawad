@@ -10,7 +10,7 @@ const educationList2021 = [
         title: 'Angular - The Complete Guide (2021 Edition)',
         link: 'https://www.udemy.com/certificate/UC-96438dbc-261e-4013-adbe-be0f96287489/'
     }
-]
+];
 const educationList2020 = [
     {
         title: 'Databases: Relational Databases and SQL',
