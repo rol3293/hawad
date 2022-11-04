@@ -2,6 +2,7 @@ import 'animate.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Header from '../components/Header'
+import Time from '../components/Time'
 import Link from 'next/link'
 
 export default function Home() {
@@ -27,17 +28,21 @@ export default function Home() {
 					</a>
 				</div>
 				<br />
-				<Link href='/education'>
-					<div className='animate__animated animate__fadeInUp animate__fast'>
+				<div className='animate__animated animate__fadeInUp animate__fast'>
+					<Link href='/education'>
 						<a className='nav-item underline'>View all my learnings</a>
-					</div>
-				</Link>
+					</Link>
+				</div>
 
-				<div style={{ marginTop: '40px' }} className='animationUp1'>
+				<div style={{ marginTop: '20px' }} className='animationUp1'>
 					<a className='nav-item' href='https://github.com/rol3293' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faGithub} size={'lg'} /></a>
 					<a className='nav-item' href='https://www.linkedin.com/in/hawad-ahmad-6979121b5/' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} size={'lg'} /></a>
 					<a className='nav-item' href='https://twitter.com/Thorpost1' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faTwitter} size={'lg'} /></a>
 					<a className='nav-item' href='https://discord.com/users/328941655656759306' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faDiscord} size={'lg'} /></a>
+				</div>
+
+				<div style={{ marginTop: '25px' }}>
+					<Time />
 				</div>
 			</main>
 		</div>
