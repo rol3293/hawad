@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Card extends React.Component {
     render() {
         return (
-            <a href={this.props.href} target='_blank' rel="noreferrer">
+            <a href={this.props.href} target={this.props.href !== '#' ? '_blank' : ''} rel="noreferrer">
                 <div className='box'>
                     <FontAwesomeIcon icon={this.props.icon} size={'2x'} style={{marginLeft: '10px', marginRight: '30px'}}/>
                     <div>
