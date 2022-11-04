@@ -17,9 +17,9 @@ const projectList = [
         icon: faMessage
     },
     {
-        link: 'https://github.com/rol3293/BotMinter',
+        link: '#',
         title: 'Smart Contract Bot',
-        desc: 'Bot for executing smart contract functions using electron',
+        desc: 'Bot for executing smart contract functions using electron. Website in development',
         icon: faRobot
     },
     {
