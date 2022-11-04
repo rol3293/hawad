@@ -1,7 +1,7 @@
 import 'animate.css'
 import Header from '../components/Header'
 
-const description = 'Currenlty enrolled in Computer Science Technology at Vanier. Ever since I was a young child, I always interested on electronics and how it worked. My curiosity led me to start programming at a young age (Wrote my first \'hello world\' program in Java when I was 14). I have learned and increased my knowledge in computer science ever since.';
+const description = 'Currently enrolled in Computer Science Technology at Vanier. Ever since I was a young child, I always interested on electronics and how it worked. My curiosity led me to start programming at a young age (Wrote my first \'hello world\' program in Java when I was 14). I have learned and increased my knowledge in computer science ever since.';
 
 function calculateAge() {
     const date = new Date();
