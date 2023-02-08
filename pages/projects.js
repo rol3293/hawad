@@ -17,7 +17,7 @@ const projectList = [
         icon: faMessage
     },
     {
-        link: '#',
+        link: 'https://mintr-website.vercel.app/',
         title: 'Smart Contract Bot',
         desc: 'Bot for executing smart contract functions using electron. Website in development',
         icon: faRobot
