@@ -13,6 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
+    "@vercel/edge-config": "^0.2.1",
     "animate.css": "^4.1.1",
     "date-and-time": "^2.4.0",
     "next": "12.1.6",

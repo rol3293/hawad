@@ -1,7 +1,6 @@
 import 'animate.css'
 import Header from '../components/Header'
-
-const description = 'Currently enrolled in Computer Science Technology at Vanier. Ever since I was a young child, I always interested on electronics and how it worked. My curiosity led me to start programming at a young age (Wrote my first \'hello world\' program in Java when I was 14). I have learned and increased my knowledge in computer science ever since.';
+import {get} from "@vercel/edge-config";
 
 function calculateAge() {
     const date = new Date();
@@ -12,7 +11,9 @@ function calculateAge() {
     return (month + 1 >=8 && day >= 8) ? year - 2003 : year - 2004;
 }
 
-export default function About() {
+export default async function About() {
+    let description = await get("about")
+
     return (
         <div>
             <Header title="About"/>
