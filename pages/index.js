@@ -4,18 +4,21 @@ import { faDiscord, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-br
 import Header from '../components/Header'
 import Time from '../components/Time'
 import Link from 'next/link'
+import {get} from "@vercel/edge-config";
 
-export default function Home() {
+export async function getServerSideProps() {
+	const index = await get("index")
+	return { props: {index} }
+}
+export default function Home({index}) {
 
 	return (
 		<div>
-
 			<Header title="hawad" />
-
 			<main>
 				<div className='animate__animated animate__fadeIn'>
 					<h1 className='title'>Hawad</h1>
-					<div className='subtitle'>Computer Science student from Montreal</div>
+					<div className='subtitle'>{index.header}</div>
 				</div>
 				<br />
 				<div className='animate__animated animate__fadeInUp animate__faster'>Currently taking
@@ -29,7 +32,7 @@ export default function Home() {
 				</div>
 				<br />
 				<div className='animate__animated animate__fadeInUp animate__fast'>
-					<Link href='/education'>
+					<Link href='/pages/education'>
 						<a className='nav-item underline'>View all my learnings</a>
 					</Link>
 				</div>
