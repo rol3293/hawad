@@ -1,6 +1,6 @@
 import 'animate.css'
 import Header from '../components/Header'
-import {getAll} from "@vercel/edge-config";
+import {get} from "@vercel/edge-config";
 
 function calculateAge() {
     const date = new Date();
@@ -12,17 +12,16 @@ function calculateAge() {
 }
 
 export async function getServerSideProps() {
-    const allVariables = await getAll();
+    const about = await get("about");
 
     return {
         props: {
-            rol: allVariables
+            about
         }
     };
 }
 
-export default function About({ rol }) {
-    console.log(rol);
+export default function About({ about }) {
     return (
         <div>
             <Header title="About"/>
@@ -30,6 +29,7 @@ export default function About({ rol }) {
             <main style={{ padding: '15px' }} >
                 <div className='animate__animated animate__fadeIn animate__fast'>
                     <div className='title'>About Me</div>
+                    <div className='subtitle'>{about}</div>
                 </div>
                 <br /><br />
                 <h2 className='animate__animated animate__fadeInUp animate'>Personal Info</h2>
