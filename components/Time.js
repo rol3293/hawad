@@ -16,7 +16,7 @@ export default function Time() {
 
     return (
         <>
-            <FontAwesomeIcon icon={faClock} size={"lg"} />
+            <FontAwesomeIcon icon={faClock} size={"lg"} style={{ paddingRight: 10}} />
             {time}
         </>
     );
