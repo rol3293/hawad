@@ -40,7 +40,7 @@ export default function Education({educationList}): InferGetStaticPropsType<type
                                             <a
                                                 href={item.link}
                                                 className='hover-underline-animation'
-                                                target='_blank'
+                                                target={item.link != "#" ? '_blank' : ''}
                                                 rel="noreferrer"
                                             >{item.title}</a>
                                         </li>
