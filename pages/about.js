@@ -1,6 +1,6 @@
 import 'animate.css'
 import Header from '../components/Header'
-import {createClient, getAll} from "@vercel/edge-config";
+import {getAll} from "@vercel/edge-config";
 
 function calculateAge() {
     const date = new Date();
