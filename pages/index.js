@@ -1,6 +1,6 @@
 import 'animate.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faDiscord, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Header from '../components/Header'
 import Time from '../components/Time'
 import Link from 'next/link'
@@ -40,7 +40,6 @@ export default function Home({index}) {
 				<div style={{ marginTop: '20px' }} className='animationUp1'>
 					<a className='nav-item' href='https://github.com/rol3293' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faGithub} size={'lg'} /></a>
 					<a className='nav-item' href='https://www.linkedin.com/in/hawad-ahmad-6979121b5/' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} size={'lg'} /></a>
-					<a className='nav-item' href='https://twitter.com/Thorpost1' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faTwitter} size={'lg'} /></a>
 					<a className='nav-item' href='https://discord.com/users/328941655656759306' target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faDiscord} size={'lg'} /></a>
 				</div>
 
