@@ -16,12 +16,15 @@
     "@vercel/edge-config": "^0.2.1",
     "animate.css": "^4.1.1",
     "date-and-time": "^2.4.0",
+    "font-awesome": "^4.7.0",
     "next": "12.1.6",
     "particlesjs": "^2.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.4.8",
+    "@types/react": "^18.2.18",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6"
   }
