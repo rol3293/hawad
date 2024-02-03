@@ -32,7 +32,7 @@ export default function Home({index}) {
 				</div>
 				<br />
 				<div className='animate__animated animate__fadeInUp animate__fast'>
-					<Link href='/pages/education'>
+					<Link href='/education'>
 						<a className='nav-item underline'>View all my learnings</a>
 					</Link>
 				</div>
