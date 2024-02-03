@@ -1,7 +1,6 @@
-import 'animate.css'
-import Header from '../components/Header'
-
-const description = 'Currently enrolled in Software engineering at Concordia. Ever since I was a young child, I always interested on electronics and how it worked. My curiosity led me to start programming at a young age (Wrote my first \'hello world\' program in Java when I was 14). I have learned and increased my knowledge in computer science ever since.';
+import "animate.css";
+import Header from "../components/Header";
+import { get } from "@vercel/edge-config";
 
 function calculateAge() {
     const date = new Date();
@@ -9,28 +8,45 @@ function calculateAge() {
     const month = date.getMonth();
     const day = date.getDate();
 
-    return (month + 1 >=8 && day >= 8) ? year - 2003 : year - 2004;
+    return month + 1 >= 8 && day >= 8 ? year - 2003 : year - 2004;
 }
 
-export default function About() {
+export const getServerSideProps = async () => {
+    const about = await get("about");
+    return { props: { about } };
+};
+
+export default function About({ about }) {
     return (
         <div>
-            <Header title="About"/>
+            <Header title="About" />
 
-            <main style={{ padding: '15px' }} >
-                <div className='animate__animated animate__fadeIn animate__fast'>
-                    <div className='title'>About Me</div>
-                    <div className='subtitle'>{description}</div>
+            <main style={{ padding: "15px" }}>
+                <div className="animate__animated animate__fadeIn animate__fast">
+                    <div className="title">About Me</div>
+                    <div className="subtitle">{about.header}</div>
                 </div>
-                <br /><br />
-                <h2 className='animate__animated animate__fadeInUp animate'>Personal Info</h2>
+                <br />
+                <br />
+                <h2 className="animate__animated animate__fadeInUp animate">
+                    Personal Info
+                </h2>
                 <ul>
-                    <li className='animationUp1'>Age: {calculateAge()}</li>
-                    <li className='animationUp2'>Favorite Colour: <bold style={{ color: 'green' }}>Green</bold></li>
-                    <li className='animationUp3'>Sports that I play: Soccer and Basketball</li>
-                    <li className='animationUp4'>Favorite Fruit: Blueberries</li>
+                    <li className="animationUp1">Age: {calculateAge()}</li>
+                    <li className="animationUp2">
+                        Favorite Colour: <b style={{ color: "green" }}>Green</b>
+                    </li>
+                    {about.personalInfo.map((value, index) => {
+                        return (
+                            <li
+                                className={`animationUp${index + 1}`}
+                                key={value.attribute}>
+                                {value.attribute + " " + value.value}
+                            </li>
+                        );
+                    })}
                 </ul>
             </main>
         </div>
-    )
+    );
 }
