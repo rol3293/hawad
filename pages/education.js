@@ -1,26 +1,16 @@
 import 'animate.css'
 import Header from '../components/Header';
-import {GetServerSideProps, InferGetStaticPropsType} from "next";
-import {get} from "@vercel/edge-config";
+import { get } from "@vercel/edge-config";
 
-type EducationItem = {
-    title: string,
-    link: string
+export const getServerSideProps = async () => {
+    const educationList = await get("education");
+    return { props: { educationList } }
 }
 
-type EducationList = {
-    [key: string]: EducationItem[]
-}
-
-export const getServerSideProps: GetServerSideProps<{ educationList: EducationList }> = async () => {
-    const educationList: EducationList = await get("education");
-    return {props: {educationList}}
-}
-
-export default function Education({educationList}): InferGetStaticPropsType<typeof getServerSideProps> {
+export default function Education({ educationList }) {
     return (
         <div>
-            <Header title="Education"/>
+            <Header title="Education" />
 
             <main>
                 <div className='subtitle animate__animated animate__fadeIn animate__fast'>
@@ -28,14 +18,14 @@ export default function Education({educationList}): InferGetStaticPropsType<type
                     <div>List of all my learnings and certificates</div>
                 </div>
 
-                <br/>
+                <br />
                 {
                     Object.keys(educationList).reverse().map(key => {
                         return (
                             <div key={key}>
                                 <h2 className={'animate__animated animate__fadeInUp animate__fast'}>{key}</h2>
                                 <ul className={'animate__animated animate__fadeInUp'}>
-                                    {educationList[key].map((item: EducationItem) => {
+                                    {educationList[key].map((item) => {
                                         return <li key={item.link}>
                                             <a
                                                 href={item.link}
@@ -52,5 +42,5 @@ export default function Education({educationList}): InferGetStaticPropsType<type
                 }
             </main>
         </div>
-    );
+    )
 }
