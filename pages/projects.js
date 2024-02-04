@@ -1,6 +1,6 @@
 import 'animate.css';
 import Header from '../components/Header';
-import Card from '../components/Card'
+import Card from '../components/Card';
 import { faMessage, faEye, faGamepad, faRobot, faCartShopping, faServer } from "@fortawesome/free-solid-svg-icons";
 
 const projectList = [
