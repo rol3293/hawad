@@ -46,6 +46,12 @@ a {
   padding-right: 30%;
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5em;
+  }
+}
+
 nav {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -70,7 +76,6 @@ nav {
   display: flex;
   align-items: center;
   padding: 25px 20px 25px 20px;
-  width: 600px;
   min-height: 120px;
   border: 1px solid #1E2837;
   border-radius: 10px;
