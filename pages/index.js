@@ -1,6 +1,6 @@
 import 'animate.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord, faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Header from '../components/Header'
 import Time from '../components/Time'
 import Link from 'next/link'
