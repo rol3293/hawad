@@ -39,7 +39,7 @@ export default function About({ about }) {
                     {about.personalInfo.map((value, index) => {
                         return (
                             <li
-                                className={`animationUp${index + 1}`}
+                                className={`animationUp${index + 3}`}
                                 key={value.attribute}>
                                 {value.attribute + " " + value.value}
                             </li>
