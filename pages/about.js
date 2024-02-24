@@ -24,7 +24,7 @@ export default function About({ about }) {
             <main style={{ padding: "15px" }}>
                 <div className="animate__animated animate__fadeIn animate__fast">
                     <div className="title">About Me</div>
-                    <div className="subtitle">{about.header}</div>
+                    <div className="subtitle" style={{whiteSpace: "pre-line"}}>{about.header}</div>
                 </div>
                 <br />
                 <br />
