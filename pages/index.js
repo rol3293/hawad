@@ -23,11 +23,13 @@ export default function Home({index}) {
 				<br />
 				<div className='animate__animated animate__fadeInUp animate__faster'>Currently taking
 					<a
+						rel='noreferrer'
+						target='_blank'
 						className='nav-item underline'
 						style={{ marginLeft: '7px' }}
-						href='https://www.udemy.com/share/101Wbw3@zkWPfO8omtllOL9aZLSVqYQWfDi31ONI7upX55dbDk1Tu8kXMxKm6jl5Xb9BOQ1ScA==/'
+						href={index.learning.link}
 					>
-						&apos;The Complete React Native + Hooks Course&apos;
+						&apos;{index.learning.title}&apos;
 					</a>
 				</div>
 				<br />
