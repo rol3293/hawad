@@ -23,6 +23,7 @@ export default function Home({index}) {
 				<br />
 				<div className='animate__animated animate__fadeInUp animate__faster'>Currently taking
 					<a
+						rel='noopener'
 						target='_blank'
 						className='nav-item underline'
 						style={{ marginLeft: '7px' }}
