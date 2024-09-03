@@ -8,7 +8,13 @@ function calculateAge() {
     const month = date.getMonth();
     const day = date.getDate();
 
-    return month + 1 >= 8 && day >= 8 ? year - 2003 : year - 2004;
+    if (month + 1 == 8) {
+        return day >= 8 ? year - 2003 : year - 2004;
+    } else if (month + 1 > 8) {
+        return year - 2003
+    } else {
+        return year - 2004
+    }
 }
 
 export const getServerSideProps = async () => {
